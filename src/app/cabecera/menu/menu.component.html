@@ -1,0 +1,29 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light"  id="nav" >
+  <div class="container-fluid mt-4">
+    <a [routerLink]="['/home']"  id="brand" class="navbar-brand mx-3">
+      <img src="assets/img/home/selva-logo.png" alt="" class="img-fluid" style="max-width: 150px;">
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle Navbar">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <div class="mx-auto"></div>
+      <ul class="navbar-nav text-end mx-5" id="lista">
+        <li>
+          <a [routerLink]="['/home']" routerLinkActive="active" class=" nav-link px-md-5  font-menu">Inicio</a>
+        </li>
+        <!--<li>
+          <a [routerLink]="['/building']" routerLinkActive="active" class="nav-link px-md-3 text-white font-menu">Invierte con nosotros</a>
+        </li>
+        <li>
+          <a [routerLink]="['/partners']"  routerLinkActive="active" class=" nav-link px-md-3 text-white font-menu">Partners</a>
+        </li>
+        -->
+        <li>
+          <a [routerLink]="['/home']" fragment="contacto"  class=" nav-link px-md-5 text-white contacto font-menu">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
